@@ -2,25 +2,19 @@
 <template>
     <div>
       <home-header></home-header>
-      <class></class>
-      <bottom-nav></bottom-nav>
+      <falso></falso>
     </div>
 </template>
 
 <script>
-
 import HomeHeader from '../home/components/Header'
-import Class from './components/Class'
-import BottomNav from './components/BottomNav'
-
-
+import falso from './components/falso.vue'
 
 export default {
-  name: 'type',
+  name: 'shipin',
   components: {
     HomeHeader,
-    Class,
-    BottomNav
+    falso
   }
 }
 

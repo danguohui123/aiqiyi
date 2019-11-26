@@ -15,7 +15,9 @@
             <a class="fover-push">&#xe630;</a>
           </li>
           <li>
+            <router-link to="/shipin">
             <a class="fl-size">我的</a>
+            </router-link>
           </li>
         </ul>
       </div>
