@@ -7,6 +7,7 @@
 </template>
 
 <script>
+// 我TM帅
 import HomeHeader from '../home/components/Header'
 import falso from './components/falso.vue'
 
