@@ -4,6 +4,8 @@
       <home-header></home-header>
       <falso></falso>
       <home-title></home-title>
+      <mulu></mulu>
+      <zhoubian></zhoubian>
     </div>
 </template>
 
@@ -12,6 +14,9 @@
 import HomeHeader from '../home/components/Header'
 import falso from './components/falso.vue'
 import HomeTitle from './components/title.vue'
+import mulu from './components/mulu'
+import zhoubian from './components/zhoubian'
+
 
 
 export default {
@@ -19,7 +24,9 @@ export default {
   components: {
     HomeHeader,
     falso,
-    HomeTitle
+    HomeTitle,
+    mulu,
+    zhoubian
   }
 }
 
