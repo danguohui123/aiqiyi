@@ -5,17 +5,16 @@
       <falso></falso>
       <home-title></home-title>
       <mulu></mulu>
-      <zhoubian></zhoubian>
+      <zhou></zhou>
     </div>
 </template>
 
 <script>
-// 我TM帅
 import HomeHeader from '../home/components/Header'
 import falso from './components/falso.vue'
 import HomeTitle from './components/title.vue'
-import mulu from './components/mulu'
-import zhoubian from './components/zhoubian'
+import mulu from './components/mulu.vue'
+import zhou from './components/zhoubian.vue'
 
 
 
@@ -26,7 +25,7 @@ export default {
     falso,
     HomeTitle,
     mulu,
-    zhoubian
+    zhou
   }
 }
 
