@@ -6,6 +6,7 @@
       <home-title></home-title>
       <mulu></mulu>
       <zhou></zhou>
+      <star></star>
     </div>
 </template>
 
@@ -15,6 +16,7 @@ import falso from './components/falso.vue'
 import HomeTitle from './components/title.vue'
 import mulu from './components/mulu.vue'
 import zhou from './components/zhoubian.vue'
+import star from './components/star'
 
 
 
@@ -25,7 +27,8 @@ export default {
     falso,
     HomeTitle,
     mulu,
-    zhou
+    zhou,
+    star
   }
 }
 
