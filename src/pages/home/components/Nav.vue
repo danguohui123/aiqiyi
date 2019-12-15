@@ -50,7 +50,7 @@ export default {
     width 6rem !important
     color #333
     text-align center
-    font-size 2rem
+    font-size 1.5rem
   }
   .indexAdd{
     position absolute

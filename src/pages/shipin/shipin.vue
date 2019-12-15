@@ -7,6 +7,7 @@
       <mulu></mulu>
       <zhou></zhou>
       <star></star>
+      <pinglun></pinglun>
     </div>
 </template>
 
@@ -17,6 +18,7 @@ import HomeTitle from './components/title.vue'
 import mulu from './components/mulu.vue'
 import zhou from './components/zhoubian.vue'
 import star from './components/star'
+import pinglun from './components/pinglun'
 
 
 
@@ -28,7 +30,8 @@ export default {
     HomeTitle,
     mulu,
     zhou,
-    star
+    star,
+    pinglun
   }
 }
 
