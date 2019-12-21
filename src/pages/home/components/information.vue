@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="pic-content">
-      <a class="a-content" v-for="item of infolist" :key="item.id">
+      <a class="a-content" v-for="item of list" :key="item.id">
         <div class="mic-img" :style="{backgroundImage:'url('+item.Image+')'}"></div>
         <div class="mic-text">{{item.text}}</div>
       </a>
@@ -41,19 +41,8 @@
 <script>
   export default {
     name:'HomeInformation',
-    data(){
-      return {
-        infolist:[{
-          id:'001',
-          Image:'http://m.iqiyipic.com/common/lego/20191122/49bd32631573494aac11681a6d0d7457.gif',
-          text:'人社部公布100个短缺职业！你的职业排第几？'
-        },
-        {
-          id:'002',
-          Image:'http://m.iqiyipic.com/image/20191122/5d/57/v_141457728_m_601_284_160.jpg',
-          text:'结婚500元随礼被删好友'
-        }]
-      }
+    props:{
+      list:Array
     }
   }
 </script>

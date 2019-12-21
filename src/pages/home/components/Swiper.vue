@@ -1,6 +1,6 @@
 <template>
       <div class="lunbo">
-        <swiper :option="swiperOption">
+        <swiper :option="swiperOption" v-if="list.length">
           <swiper-slide v-for="(page,index) of pages" :key="index">
             <div class="swiperN">
               <a class="a_img" v-for="item of page" :key="item.id" :style="{backgroundImage:'url('+ item.Image +')'}">
@@ -19,39 +19,20 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props:{
+    list:Array
+  },
   data () {
     return {
       swiperOption: {
 
       },
-      textList: [{
-        id: '001',
-        Image: '//m.iqiyipic.com/common/lego/20191120/e535d00b412d4c889fabeb6d35c7693d.jpg',
-        text: '慢游：华哥带黄景瑜看鲸鱼圆梦',
-        time: '2019-11-20期',
-        size: '-4rem 0'
-      },
-      {
-        id: '002',
-        Image: '//m.iqiyipic.com/common/lego/20191119/82024f1a397f4abda4c018201b4274e8.jpg',
-        text: '灵剑山：许凯女装惊艳登场',
-        time: '更新至18集',
-        size: '-4rem 0'
-      },
-      {
-        id: '003',
-        Image: '//pic1.iqiyipic.com/common/lego/20191119/0ab08c77675b43798cf85dfd7020147c.jpg',
-        text: '心灵法医：聂远宋轶联手探奇案',
-        time: '更新至8集',
-        size: '-7.5rem 0'
-      }
-      ]
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.textList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 1)
         if (!pages[page]) {
           pages[page] = []

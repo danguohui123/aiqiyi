@@ -16,7 +16,7 @@
           </li>
           <li>
             <router-link to="/shipin">
-            <a class="fl-size">我的</a>
+            <a class="fl-size">{{this.name}}</a>
             </router-link>
           </li>
         </ul>
@@ -26,7 +26,10 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props:{
+    name:String
+  }
 }
 
 </script>
