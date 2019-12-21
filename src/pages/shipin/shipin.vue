@@ -20,8 +20,6 @@ import zhou from './components/zhoubian.vue'
 import star from './components/star'
 import pinglun from './components/pinglun'
 
-
-
 export default {
   name: 'shipin',
   components: {
