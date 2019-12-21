@@ -1,14 +1,13 @@
-
 <template>
-    <div>
-      <home-header></home-header>
-      <falso></falso>
-      <home-title></home-title>
-      <mulu></mulu>
-      <zhou></zhou>
-      <star></star>
-      <pinglun></pinglun>
-    </div>
+  <div>
+    <home-header></home-header>
+    <falso></falso>
+    <home-title></home-title>
+    <mulu></mulu>
+    <zhou></zhou>
+    <star></star>
+    <pinglun></pinglun>
+  </div>
 </template>
 
 <script>
@@ -32,9 +31,6 @@ export default {
     pinglun
   }
 }
-
 </script>
 
-<style>
-
-</style>
+<style></style>
