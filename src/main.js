@@ -11,11 +11,13 @@ import VueawesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 import Video from 'video.js'
 import 'video.js/dist/video-js.css'
+import http from './http'
 
 Vue.prototype.$video = Video
 Vue.config.productionTip = false
 fastclick.attach(document.body)
 Vue.use(VueawesomeSwiper)
+Vue.prototype.$http = http
 
 /* eslint-disable no-new */
 new Vue({

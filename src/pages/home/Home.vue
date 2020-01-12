@@ -1,15 +1,15 @@
 
 <template>
-    <div>
-        <home-header :name="name"></home-header>
-        <home-nav></home-nav>
-        <home-search></home-search>
-        <home-swiper :list="textList"></home-swiper>
-        <home-tubiao :list="iconList"></home-tubiao>
-        <home-list></home-list>
-        <home-information :list="infolist"></home-information>
-        <bottom-nav></bottom-nav>
-    </div>
+  <div>
+    <home-header :name="name"></home-header>
+    <home-nav></home-nav>
+    <home-search></home-search>
+    <home-swiper :list="textList"></home-swiper>
+    <home-tubiao :list="iconList"></home-tubiao>
+    <home-list></home-list>
+    <home-information :list="infolist"></home-information>
+    <bottom-nav></bottom-nav>
+  </div>
 </template>
 
 <script>
@@ -22,7 +22,6 @@ import HomeTubiao from './components/Tubiao'
 import HomeList from './components/List'
 import HomeInformation from './components/information'
 import BottomNav from '../type/components/BottomNav'
-import axios from 'axios'
 
 export default {
   name: 'Home',
@@ -46,9 +45,10 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json').then(this.getHomeInfoSucc)
+      this.$http.get('/api/all').then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
+      console.log(res.data)
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
@@ -67,5 +67,4 @@ export default {
 </script>
 
 <style>
-
 </style>
