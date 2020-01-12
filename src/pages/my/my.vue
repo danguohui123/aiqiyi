@@ -56,7 +56,7 @@ export default {
           picture_path: 'https://kmyhl.oss-cn-shenzhen.aliyuncs.com/e-medicine/d3TNrsh75a.png'
         }
       ]
-    };
+    }
   },
   mounted () {
     let that = this
